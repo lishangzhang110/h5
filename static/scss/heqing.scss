@@ -1,0 +1,107 @@
+// 底部按钮盒子样式
+.hq-footer-bottom-box {
+    z-index: 100;
+    padding: 32rpx;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 -5px 5px #eee;
+}
+// 页面样式
+.hq-page {
+    // background: linear-gradient(180deg, #0C8A5A 0%, #0A1E12 25%);
+    background: linear-gradient(180deg, #0C8A5A 0%, #0A1E12 15%);
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+// 卡片
+.hq-card {
+    padding: 30rpx;
+    border-radius: 20rpx;
+    background-color: #fff;
+}
+// 汇总卡片
+.hq-card-total {
+    padding: 20rpx;
+    border-radius: 20rpx;
+    border: 1px solid rgba(0, 255, 133, 0.25);
+    box-shadow: -1px -0px 0px #0C8A5A, 1px 0px 0px #0C8A5A;
+}
+// 卡片-浮雕效果
+.hq-card-relief {
+    padding: 20rpx;
+    border-radius: 20rpx;
+    box-shadow: inset 4rpx 0rpx 0rpx 0rpx #2c5c44;
+    border: 1rpx solid #2c5c44;
+}
+// 标题
+.hq-title {
+    font-size: 32rpx;
+    /* 设置字体透明 */
+    color: transparent;
+    /* 设置线性渐变，从红色渐变到蓝色 */
+    background-image: linear-gradient(29.35774969890972deg, #90FE67 0%, #63E0E3 100%);
+    /* 使用 -webkit-background-clip 属性将背景剪裁至文本形状 */
+    -webkit-background-clip: text;
+    /* 非Webkit内核浏览器需要使用标准前缀 */
+    background-clip: text;
+    /* 把当前元素设置为行内块，以便能够应用背景 */
+    display: inline-block;
+}
+// 表格
+.hq-table {
+    border-radius: 20rpx;
+    overflow: hidden;
+    color: #fff;
+    .tr {
+        display: flex;
+        &:nth-child(2n + 1) {
+            background-color: rgb(36, 59, 44);
+        }
+        &:nth-child(2n + 2) {
+            background-color: transparent;
+        }
+        text {
+            text-align: center;
+            padding: 20rpx 10rpx;
+            font-size: 26rpx;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .tr.header {
+        text {
+            font-weight: bold;
+        }
+    }
+}
+// 标签
+.hq-tag {
+    background-color: rgba(204, 226, 214, 0.7);
+    color: #3ECEBF;
+    font-size: 22rpx;
+    margin-right: 4rpx;
+    padding: 8rpx 16rpx;
+    border-radius: 8rpx;
+    &.info{
+        background-color: #F3F3F4;
+        color: #666666;
+    }
+}
+// 标签-带浮雕效果
+.hq-tag-relief {
+    border-color: rgba(32, 48, 39, 0.7);
+    color: #A1C6B1;
+    font-size: 22rpx;
+    margin-right: 4rpx;
+    padding: 12rpx;
+    border-radius: 8rpx;
+    background: linear-gradient(90deg, #1E3127 0%, #0A1E12 100%);
+    box-shadow: inset 4rpx 0rpx 0rpx 0rpx #2C5C44;
+}
